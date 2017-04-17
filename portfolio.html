@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+	<link rel="stylesheet" type="text/css" href="portfoliostyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/icons/fontawesome_icons_brand.asp">
+</head>
+<body>
+<div class="flex-container">
+	<div class="heading"><a href="#JAtinJain" style="color: #04093C;text-decoration: none;">Jatin Jain</a></div>
+	<div class="navbar"><a href="#about" class="navcontent">ABOUT</a></div>
+	<div class="navbar"><a href="#portfolio" class="navcontent">PORTFOLIO</a></div>
+	<div class="navbar"><a href="#contact" class="navcontent">CONTACT</a></div>
+</div>
+<div id="page">
+<div id="about" class="about">
+	<div><img src="file:///home/jatin/Documents/portfolio/15192641_705257482983273_7397891738600728954_n.jpg" class="profilepic" align="right"><p class="skills">Web developer, competetive coder in C & C++, front end web designing.</p><hr size="4px" style="background-color: #DFE1EA;margin-left: 100px;box-shadow: 2px 2px 4px grey;">
+	<p class="skillslearning">Learning Web designing as a Beginner</p></div>
+</div>
+<div id="portfolio" class="portfolio">
+	<h1 class="port">PORTFOLIO</h1>
+	<hr size="4px" style="background-color: #9798A1; box-shadow: 2px 2px 4px grey ;margin: 0px 80px 0px 80px; color: grey;">
+	<div class="portdetails">
+		<img src="file:///home/jatin/Documents/portfolio/Screenshot%20from%202017-04-14%2016-35-20.png" class="portfoliodetails">
+		<img src="file:///home/jatin/Documents/portfolio/Screenshot%20from%202017-04-14%2016-35-34.png" class="portfoliodetails">
+	</div>
+</div>
+<div id="contact" class="contact">
+<h1 class="contactme">CONTACT ME</h1>
+<hr size="4px" style="background-color: #9798A1; box-shadow: 2px 2px 4px grey ;margin: 0px 80px 0px 80px; color: grey;">
+<div>
+	<form style="float: left;padding: 50px 90px 20px 80px;">
+		<input type="text" name="Name" placeholder="Name" class="formdisplay"><br>
+		<input type="text" name="Email Address" placeholder="Email Address" class="formdisplay"><br>
+		<input type="text" name="Phone Number" placeholder="Phone Number" class="formdisplay"><br>
+		<textarea placeholder="Message"></textarea><br>
+		<input type="submit" name="Send" value="Send">
+	</form>
+</div>
+<div>
+	<p class="touch">Want to get in touch with me? just feel free to drop me a line anytime.</p><br>
+<p style="color: #9798A1;font-size: 150%;">I promise to reply A.S.A.P.</p>
+</div>
+</div>
+</div>
+<div class="about-page">
+	<div class="about-this-page">
+		<h2 style="text-align: center;">ABOUT THIS PAGE</h2>
+		<p style="font-size: 110%;text-align: center;">Made with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-music" aria-hidden="true"></i><br>
+by <a href="#jatin" style="text-decoration: none;color: #051868;">Jatin Jain</a></p>
+	</div>
+	<div class="around-the-web">
+		<h2 style="text-align: center;">AROUND THE WEB</h2>
+		<div style="text-align: center;font-size: 200%;">
+		<a href="#twitter" style="text-decoration: none;color: white;"><i class="fa fa-twitter icon"></i></a>
+		<a href="#linkdin" style="text-decoration: none;color: white;""><i class="fa fa-linkedin icon"></i></a>
+		<a href="#github" style="text-decoration: none;color: white;""><i class="fa fa-github icon"></i></a>
+	</div>
+	</div>
+</div>
+<div class="rights">
+	<p style="font-size: 120%;text-align: center; padding-top: 30px; color: white;">Jatin Jain <i class="fa fa-copyright"></i> 2017</p>
+</div>
+</body>
+</html>
